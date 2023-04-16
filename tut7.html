@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables and lists</title>
+</head>
+
+<body>
+    <ul type="circle">
+        <!-- can be circcle hollow and square -->
+        <li>this is first line</li>
+        <li>this is second line</li>
+        <li>this is third line</li>
+        <!-- nested list -->
+        <li>
+            <ul>
+                <li> this is list 1 </li>
+                <li> this is list 2 </li>
+                <li> this is list 3 </li>
+            </ul>
+        </li>
+    </ul>
+    <ol type="i">
+        <li>this is ordered list 1</li>
+        <li>this is ordered list 2</li>
+        <li>this is ordered list 3 </li>
+    </ol>
+    <!-- table -->
+    <h3>table</h3>
+    <table>
+        <thead>
+            <tr>name </tr>
+            <tr>id </tr>
+            <tr>work </tr>
+        </thead>
+        <tbody>
+            <td>ankit</td>
+            <td>34534</td>
+            <td>1</td>
+        </tbody>
+        <tbody>
+            <td>raj </td>
+            <td>34534</td>
+            <td>2</td>
+        </tbody>
+    </table>
+
+
+
+
+
+    <h3>tut8</h3>
+    <h4>forms in html </h4>
+    <!-- action tells us about what to do with the form, here we given our dataa to backend.php -->
+    <form action="backend.php">
+        <!-- use div to change line -->
+        <label for="name">NAME</label>
+        <!-- name will allow to select name area by clicking name  -->
+        <div> <input type="text" name="my name" id="name"></div>
+
+        <div>role: <input type="text" name="my role"></div>
+        <div>email: <input type="email" name="my email"></div>
+
+        <div>date : <input type="date" name="date"></div>
+        <div>
+            my bonus : <input type="number" name="my bonus">
+            <!-- we can type no in exponent like e3 means 10 to the power 3 -->
+        </div>
+        <div>are you eligible <input type="checkbox" name="my eligibility" checked>
+            <!-- checked takes the box checked at default -->
+        </div>
+        <div>
+            male <input type="radio" name="mygender" id="gender">
+            female <input type="radio" name="mygender">
+        </div>
+        <div> write about yourself
+            <textarea name="about" cols="30" rows="10"></textarea>
+        </div>
+        <div><input type="submit" value="submit now"></div>
+        <div><input type="reset" value="reset now"></div>
+        <div>
+            <label for="car">car</label>
+            <select name="my car" id="car">
+                <option value="mercedes benZ" selected>benZ</option>
+                <option value="rolls royce">royce</option>
+
+            </select>
+        </div>
+        <!-- name attribute tells the backend that my role contains the data about role -->
+    </form>
+
+
+
+
+    <h2>inline element and block elements tut 9 </h2>
+    <p>hello world</p>
+    <p>hellow world 2</p>
+    <!-- this is paragraph it is a block element  this changes line-->
+    <span>this is span , a inline element </span>
+    <li>hello world</li>
+    <li>hello world 2</li>
+    <!-- li is a block element -->
+    <em>hello world is good</em><em>guddu bhaiya</em>
+    <!-- em is inline element -->
+    <div>hello wo </div>
+    <div>gassa</div>
+    <!-- block element -->
+    <img src="https://source.unsplash.com/200x110/?nature,water" alt="no"><img
+        src="https://source.unsplash.com/200x110/?nature,water" alt="nooo">
+    <!-- inline -->
+</body>
+
+
+<h2>ideas aand classes in html tut10
+</h2>
+<div id="main box" class="redbg "></div>
+<!-- id cant be repeated to any tag 
+id is used by css to make changes in a tag associated with that id 
+class can be repeated and all properties will be imported to html from css accosiated with that class -->
+<!-- class can have multiple elements -->
+<!-- . is for class and # is for id
+span.redbg and span#mainspan
+we can use for multiple elements ...  -->
+<span class="redbg"></span>
+<span id="mainspan"></span>
+<!-- emmet takes div as default tag -->
+<div class="span"></div>
+<!-- to get multiple lines span.myclass.myclass2.myclass3*4-->
+<span class="myclass myclass2 myclass3"></span><span class="myclass myclass2 myclass3"></span><span
+    class="myclass myclass2 myclass3"></span><span class="myclass myclass2 myclass3"></span>
+
+
+
+
+
+
+
+</html>
